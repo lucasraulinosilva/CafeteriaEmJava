@@ -4,14 +4,11 @@
  */
 package Main;
 
-import java.util.Scanner;
-
 import Classes.GestaoFuncionarios;
 import Classes.GestaoPedidos;
 import Classes.GestaoProdutos;
 import Menu.MenuFuncionariosNetbeans;
 import Menu.MenuPedidosNetbeans;
-import Menu.MenuPrincipal;
 import Menu.MenuPrincipalNetbeans;
 import Menu.MenuProdutosNetbeans;
 
