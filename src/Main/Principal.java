@@ -11,6 +11,8 @@ import Menu.MenuFuncionariosNetbeans;
 import Menu.MenuPedidosNetbeans;
 import Menu.MenuPrincipalNetbeans;
 import Menu.MenuProdutosNetbeans;
+import com.formdev.flatlaf.FlatDarkLaf;
+import javax.swing.UIManager;
 
 public class Principal {
 
@@ -21,8 +23,11 @@ public class Principal {
                 if ("GTK+".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+                } else {
+                    UIManager.setLookAndFeel(new FlatDarkLaf());
                 }
             }
+            
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(MenuPrincipalNetbeans.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
